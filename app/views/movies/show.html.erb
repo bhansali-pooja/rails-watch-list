@@ -1,0 +1,8 @@
+<div class="card-show-movie-text">
+    <h4><strong><%= @movie.title %><%= @movie.rating %></h4>
+    <p><%= @movie.overview %></p>
+    <%= link_to 'Edit', edit_movie_path(@movie), class: "btn btn-light"  %>
+    <%= link_to "Delete", movie_path(@movie), method: :delete, data: { confirm: "Are you sure?" } %></div>
+    </div>
+  </div>
+</div>
